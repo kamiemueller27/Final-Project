@@ -47,7 +47,7 @@
                                 <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="17"/>
                                 <state key="normal" title="Enter"/>
                                 <connections>
-                                    <action selector="clickEnter:" destination="MKl-qa-cGg" eventType="touchUpInside" id="Wmy-Vs-LCR"/>
+                                    <action selector="clickOnEnter:" destination="MKl-qa-cGg" eventType="touchUpInside" id="Atb-BX-YCk"/>
                                     <segue destination="E9N-zx-5EB" kind="show" id="U3t-qj-gtp"/>
                                 </connections>
                             </button>
@@ -80,7 +80,7 @@
                         <barButtonItem key="backBarButtonItem" title="Back" id="0PV-EN-WHF"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="typeName" destination="YxT-do-QJv" id="HtP-X6-QaV"/>
+                        <outlet property="textFieldName" destination="YxT-do-QJv" id="bRO-tL-L7h"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gOX-Uo-dci" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -110,8 +110,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Child's Age" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UBd-Tu-s4c">
-                                <rect key="frame" x="81" y="197" width="100" height="22"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UBd-Tu-s4c">
+                                <rect key="frame" x="81" y="197" width="35" height="22"/>
                                 <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -129,7 +129,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zJA-LJ-NTY">
-                                <rect key="frame" x="252" y="197" width="96" height="30"/>
+                                <rect key="frame" x="187" y="197" width="161" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -139,7 +139,7 @@
                                 <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="19"/>
                                 <state key="normal" title="Save"/>
                                 <connections>
-                                    <action selector="clickSave:" destination="E9N-zx-5EB" eventType="touchUpInside" id="Ns1-oR-DTE"/>
+                                    <action selector="clickOnSave:" destination="E9N-zx-5EB" eventType="touchUpInside" id="umt-w5-ens"/>
                                     <segue destination="duw-eC-Gmy" kind="show" id="Rlj-PF-mwR"/>
                                 </connections>
                             </button>
@@ -192,9 +192,9 @@
                         <viewLayoutGuide key="safeArea" id="Lga-10-22D"/>
                     </view>
                     <connections>
-                        <outlet property="typeAge" destination="zJA-LJ-NTY" id="U43-bJ-S2d"/>
-                        <outlet property="typeAllergy" destination="GmP-5x-Jun" id="Erw-yX-h1y"/>
-                        <outlet property="typeContact" destination="5w6-ar-XAb" id="BLq-WW-q6L"/>
+                        <outlet property="textFieldAge" destination="zJA-LJ-NTY" id="c6m-mV-TQy"/>
+                        <outlet property="textFieldAllergy" destination="GmP-5x-Jun" id="MA9-8M-UGY"/>
+                        <outlet property="textFieldContact" destination="5w6-ar-XAb" id="FHE-A5-3Nk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xUy-Ay-bmC" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -212,7 +212,7 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="catcus" translatesAutoresizingMaskIntoConstraints="NO" id="9gk-pw-2cm">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Allergies" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZL1-Vg-JhN">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Allergies" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZL1-Vg-JhN">
                                 <rect key="frame" x="69" y="312" width="81" height="22"/>
                                 <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="19"/>
                                 <nil key="textColor"/>
@@ -230,14 +230,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="InsertAllergies" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xor-RL-546">
-                                <rect key="frame" x="232" y="312" width="137" height="22"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="insertAllergies" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xor-RL-546">
+                                <rect key="frame" x="233" y="312" width="136" height="22"/>
                                 <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="InsertAge" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yof-pf-nWR">
-                                <rect key="frame" x="255" y="249" width="91" height="22"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="insertAge" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yof-pf-nWR">
+                                <rect key="frame" x="256" y="249" width="90" height="22"/>
                                 <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -261,7 +261,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="InsertName" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0FA-ia-572">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="insertName" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0FA-ia-572">
                                 <rect key="frame" x="246" y="198" width="108.66666666666663" height="22"/>
                                 <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="19"/>
                                 <nil key="textColor"/>
@@ -273,8 +273,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uMJ-W5-WUR">
-                                <rect key="frame" x="276" y="359" width="49.666666666666686" height="22"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="insertContact" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uMJ-W5-WUR">
+                                <rect key="frame" x="239" y="359" width="125" height="22"/>
                                 <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -316,10 +316,10 @@
                         <viewLayoutGuide key="safeArea" id="jV7-Ig-jxN"/>
                     </view>
                     <connections>
-                        <outlet property="insertAge" destination="Yof-pf-nWR" id="eYp-Ab-6Cd"/>
-                        <outlet property="insertAllergy" destination="Xor-RL-546" id="XQB-lI-nkY"/>
-                        <outlet property="insertContact" destination="uMJ-W5-WUR" id="1gX-we-iFI"/>
-                        <outlet property="insertName" destination="0FA-ia-572" id="78h-S7-2BR"/>
+                        <outlet property="insertAge" destination="Yof-pf-nWR" id="L87-LN-4UA"/>
+                        <outlet property="insertAllergy" destination="Xor-RL-546" id="Lgr-z5-4C4"/>
+                        <outlet property="insertContact" destination="uMJ-W5-WUR" id="49V-sA-Ajf"/>
+                        <outlet property="insertName" destination="0FA-ia-572" id="8cq-3g-oIL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oac-Cm-FCr" userLabel="First Responder" sceneMemberID="firstResponder"/>

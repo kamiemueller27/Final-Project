@@ -9,9 +9,12 @@
 import UIKit
 
 class InfoViewController: UIViewController {
-    @IBOutlet weak var typeAge: UITextField!
-    @IBOutlet weak var typeAllergy: UITextField!
-    @IBOutlet weak var typeContact: UITextField!
+
+    @IBOutlet weak var textFieldAge: UITextField!
+    
+    @IBOutlet weak var textFieldAllergy: UITextField!
+    
+    @IBOutlet weak var textFieldContact: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,12 +22,10 @@ class InfoViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
-    @IBAction func clickSave(_ sender: Any) {
-        if let newTitle = finalSave.text {
-            applabel.text = finalSave
-        }
+    @IBAction func clickOnSave(_ sender: Any) {
+        
     }
+    
     /*
     // MARK: - Navigation
 

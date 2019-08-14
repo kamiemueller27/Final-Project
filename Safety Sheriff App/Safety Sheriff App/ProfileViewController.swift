@@ -18,6 +18,7 @@ class ProfileViewController: UIViewController {
     
     @IBOutlet weak var insertContact: UILabel!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

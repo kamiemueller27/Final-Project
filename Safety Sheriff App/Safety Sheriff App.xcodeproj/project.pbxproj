@@ -15,6 +15,7 @@
 		181511DC23048AC8001A36FF /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181511DB23048AC8001A36FF /* InfoViewController.swift */; };
 		181511DE23048AE8001A36FF /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181511DD23048AE8001A36FF /* StartViewController.swift */; };
 		181511E023049364001A36FF /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181511DF23049364001A36FF /* ProfileViewController.swift */; };
+		181511E22304A548001A36FF /* sheriff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181511E12304A548001A36FF /* sheriff.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		181511DB23048AC8001A36FF /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		181511DD23048AE8001A36FF /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		181511DF23049364001A36FF /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		181511E12304A548001A36FF /* sheriff.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sheriff.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 			children = (
 				181511C423047DC8001A36FF /* AppDelegate.swift */,
 				181511C823047DC8001A36FF /* Main.storyboard */,
+				181511E12304A548001A36FF /* sheriff.swift */,
 				181511DF23049364001A36FF /* ProfileViewController.swift */,
 				181511DB23048AC8001A36FF /* InfoViewController.swift */,
 				181511DD23048AE8001A36FF /* StartViewController.swift */,
@@ -147,6 +150,7 @@
 				181511CD23047DC8001A36FF /* Safety_Sheriff_App.xcdatamodeld in Sources */,
 				181511DE23048AE8001A36FF /* StartViewController.swift in Sources */,
 				181511E023049364001A36FF /* ProfileViewController.swift in Sources */,
+				181511E22304A548001A36FF /* sheriff.swift in Sources */,
 				181511C523047DC8001A36FF /* AppDelegate.swift in Sources */,
 				181511DC23048AC8001A36FF /* InfoViewController.swift in Sources */,
 			);

@@ -10,7 +10,7 @@ import UIKit
 
 class StartViewController: UIViewController {
 
-    @IBOutlet weak var typeName: UITextField!
+    @IBOutlet weak var textFieldName: UITextField!
     
     
     override func viewDidLoad() {
@@ -18,10 +18,14 @@ class StartViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+
     
-    @IBAction func clickEnter(_ sender: Any) {
-        if let newName = typeName.text {
-            insertName.text = newName
+    @IBAction func clickOnEnter(_ sender: Any) {
+        if let context = (UIApplication.shared.delegate as?)?.persistenContainer.viewContext {
+            let safety = Safety(entity: Safety.entity(), insertInto: context)
+        if let textFieldName = safety.text {
+            safety.insertName = clickOnEnter
+
         }
     }
     
